@@ -15,7 +15,7 @@ The contents include redacted datasets, code, and plots that illustrate the anal
 5. xai_reasoning_redacted_data_12092025.csv – Reduced and anonymized dataset used for reasoning experiments.
 6. xai_redacted_full_data_12092025.csv – Redacted and anonymized experimental dataset with classifications.
 
-# Key resources
+# Computation
 
 1. Machine learning models were trained using both Google Colab A100 GPUs as well as the CSC's Puhti supercomputer cluster.
 
