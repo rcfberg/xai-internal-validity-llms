@@ -1,4 +1,4 @@
-# xai-internal-validity-llms
+# Explainable AI: Internal validity of LLMs
 The following repository contains key code and material for the research article on internal validity of large language models.
 
 # Key assets
