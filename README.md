@@ -13,7 +13,7 @@ The contents include redacted datasets, code, and plots that illustrate the anal
 3. XAI_redacted_system_instructions_naive.rtf – Redacted system instructions for the naive prompting setup.
 4. XAI_redacted_system_instructions_sophisticated.rtf – Redacted system instructions for the theory-informed prompting setup.
 5. xai_reasoning_redacted_data_12092025.xlsx – Reduced and anonymized dataset used for reasoning experiments.
-6. xai_redacted_full_data_12092025.xlsx – Redacted experimental dataset with classifications.
+6. xai_redacted_full_data_12092025.xlsx – Redacted and anonymized experimental dataset with classifications.
 
 # Notes on usage
 
