@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\'93\'94You are an assistant with the task to classify each tweet as political (1) or non-political (0). By political we mean those tweets that are in line with concepts found in corporate communication theory such as i. Corporate political activity (CPA), which refers to efforts by firms to influence government policies for their benefit through actions such as lobbying, campaign donations, or stakeholder mobilization. ii. Political corporate social responsibility (PCSR) involves corporate efforts to address societal issues, such as education or healthcare, often beyond their core business operations, though this can still align with long-term profit goals. Finally, iii. corporate social activism (CSA) entails corporations taking public stances on polarizing or controversial societal issues to support specific ideas, individuals, or groups, sometimes independent of direct business interests.\
+            "For each tweet in the input, output a JSON object that contains:\\n"\
+            " - 'tweet': the original tweet text,\\n"\
+            " - 'classification': either 0 or 1,\\n"\
+            " - 'explanation': a list of word or words that contributed the most to this classification. Also provide a justification for this decision. \\n\\n"\
+            "The final output should be a valid JSON array containing one object per tweet. The following are some examples\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 Examples:\
+Tweet: "RT @XXXXX: "Sustainability will be the new Digital" - great insights from the #DavosAgenda by @XXXXX. <URL>"\
+Answer: "1"\
+Explanation: "Sustainability".\
+\
+Tweet: "What is #mobile testing? It's that #korona'tests are taken to the testing site. And this is how it works in practice outside of @XXXXX\'92s construction site. Fast and preventative. #koronafi <URL>using @XXXXX\'94\
+Answer: "0"\
+Explanation: "testing", "is", "Fast".\
+\
+\
+Tweet: "Positive case.@XXXXX. There are no lights to be turned off here, companies will invest if the operating environment ml tax and predictability is in order, the permits will work. Open dialogue with decision-makers is important. <URL>"\
+Answer: "1"\
+Explanation: "dialogue", "decision-makers", "environment".\
+\
+Tweet: "The Finnish forest stands are in record numbers, over 2.5 billion cubic metres! This is the result of good forest management. #carbon sink #VMI100 @XXXXX\'94\
+Answer: "1"\
+Explanation: "#carbon".\
+\
+Tweet: \'93@XXXXX and @XXXXX cooperation aims to import a new, domestic and responsibly produced protein into Finnish food tables during 2025. #innovations #circular economy <URL>"\
+Answer: "1"\
+Explanation: "responsibly", "food".\
+\
+Tweet: "Wood grows its popularity in yard and terrace construction. XXXXX XXXXX\'92s industrial saturator customers are therefore in demand for a strong, dense and durable #Sleeping wood: <URL>"\
+Answer: "0"\
+Explanation: "customers", "wood", "dense".\
+\
+Tweet: "@Current It\'92s just like this. You can conveniently put a note on your forehead."\
+Answer: "0"\
+Explanation: "@Current", "can".\
+\
+Tweet: "Refurbished medical equipment benefits the environment by reducing waste and is also a budget-friendly option for hospitals. When the pandemic caused supply shortages, @XXXXX\'92s own refurbishment program, GoldSeal, had to get creative. #EarthDay #EarthDay2021."\
+Answer: "1"\
+Explanation: "waste", "benefits", "the", "reducing".\
+\
+Tweet: "RT @XXXXX: #XXXXX Oyj #financial statements release 1.1.-31.12.2020 <URL>."\
+Answer: "0"\
+Explanation: "Oyj", \'93#XXXXX\'94, "RT".\
+\
+Tweet: \'93@XXXXX has granted XXXXX the key ticket access. "We wanted to further emphasize homeness at company level by applying for our own Key ticket access", says XXXXX XXXXX, Managing Director of XXXXX. Read more: <URL>#Key ticket <URL>."\
+Answer: "0"\
+Explanation: "Key", "homeness", "Read".\
+\
+\
+\
+\
+\
+\
+\
+"""\
+}
