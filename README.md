@@ -18,6 +18,11 @@ The contents include redacted datasets, code, and plots that illustrate the anal
 # Computation
 
 1. Machine learning models were trained using both Google Colab A100 GPUs as well as the CSC's Puhti supercomputer cluster.
+2. Data (whole dataset n=1604) followed normal train-test-validate splits (75% training, 12.5% validation and 12.5% test).
+3. Only a small class imbalance was identified (non-political = 62.5% and political = 37.5%), thereofore no further balancing was required.
+4. Model specifications: bert-large-cased; tokenizer = AutoTokenizer.from_pretrained("bert-large-cased"); max_length=128; labels: {0: EI POL, 1: POL}
+5. Training setup: LR=2e-5; epochs=3; batch=16 (train) / 64 (eval); weight_decay=0.01; class weighting=balanced
+6. Validation & selection: evaluation_strategy="epoch"; load_best_model_at_end=True; model selection by metric_for_best_model="kappa"; metrics reported: accuracy, F1 (weighted), precision, recall, Cohen’s κ; confusion matrix logged
 
 # Notes on usage
 
