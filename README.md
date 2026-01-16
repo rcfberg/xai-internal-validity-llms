@@ -14,6 +14,7 @@ The contents include redacted datasets, code, and plots that illustrate the anal
 4. XAI_redacted_system_instructions_sophisticated.rtf – Redacted system instructions for the theory-informed prompting setup.
 5. xai_reasoning_redacted_data_12092025.csv – Reduced and anonymized dataset used for reasoning experiments.
 6. xai_redacted_full_data_12092025.csv – Redacted and anonymized experimental dataset with classifications.
+7. xai_qualitative_analysis_deepseek_gtp4omini_redacted_revision.csv - Redacted and anonymized extended dataset for qualitative analysis of GPT4o-mini and DeepSeek's chain-of-thoughts.
 
 # Computation
 
